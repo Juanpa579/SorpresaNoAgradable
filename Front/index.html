@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Placas</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registro de Placas</h1>
+        <form id="placaForm">
+            <input type="text" id="numero" placeholder="Número de placa" required>
+            <input type="text" id="marca" placeholder="Marca" required>
+            <input type="text" id="modelo" placeholder="Modelo" required>
+            <input type="text" id="color" placeholder="Color" required>
+            <button type="submit">Agregar Placa</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="placasTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
